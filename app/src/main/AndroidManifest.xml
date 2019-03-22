@@ -10,7 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".CommentFeedActivity"
+            android:name=".Bears_Page"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".Login_Page"
             android:label="@string/title_activity_comment_feed"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
