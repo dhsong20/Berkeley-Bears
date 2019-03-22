@@ -12,19 +12,38 @@ import android.widget.EditText;
 public class Login_Page extends AppCompatActivity {
 
     EditText username_text;
+    Button login_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_page_layout);
+
+        login_button = findViewById(R.id.login_button_view);
+
         username_text = (EditText) findViewById(R.id.username_view);
 
         username_text.addTextChangedListener(login_textWatcher);
         checkFieldsForEmptyValues();
+
+
+
+
+//        // intent for bear page
+//        Intent bear_Intent = new Intent(this, Bears_Page.class);
+//        bear_Intent.putExtra("username_text", username_text.getText().toString());
+//
+//        login_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(bear_Intent);
+//            }
+//        });
+
     }
 
     void checkFieldsForEmptyValues() {
-        Button login_button = (Button) findViewById(R.id.login_button_view);
+
 
         String et1 = username_text.getText().toString();
 
@@ -50,7 +69,6 @@ public class Login_Page extends AppCompatActivity {
             checkFieldsForEmptyValues();
         }
     };
-
 
     public void login(View view){
         Intent newIntent = new Intent(this, Bears_Page.class);
