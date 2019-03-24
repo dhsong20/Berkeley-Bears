@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
+
 public class Login_Page extends AppCompatActivity {
 
     EditText username_text;
@@ -19,6 +22,8 @@ public class Login_Page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_page_layout);
 
+
+
         login_button = findViewById(R.id.login_button_view);
 
         username_text = (EditText) findViewById(R.id.username_view);
@@ -27,20 +32,10 @@ public class Login_Page extends AppCompatActivity {
         checkFieldsForEmptyValues();
 
 
-
-
-//        // intent for bear page
-//        Intent bear_Intent = new Intent(this, Bears_Page.class);
-//        bear_Intent.putExtra("username_text", username_text.getText().toString());
-//
-//        login_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(bear_Intent);
-//            }
-//        });
-
     }
+
+
+
 
     void checkFieldsForEmptyValues() {
 
