@@ -37,5 +37,17 @@ public class Comment {
             return "less than an hour";
         }
     }
+
+    private Comment() { }
+
+    public String getText() {
+        return text;
+    }
+    public String getUsername() {
+        return username;
+    }
+    public Date getDate() {
+        return date;
+    }
 }
 

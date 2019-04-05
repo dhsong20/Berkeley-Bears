@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "808374234630",
+    "firebase_url": "https://cs160-project3-1ee01.firebaseio.com",
+    "project_id": "cs160-project3-1ee01",
+    "storage_bucket": "cs160-project3-1ee01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808374234630:android:4d58c71c7e920ab3",
+        "android_client_info": {
+          "package_name": "com.dahoon.cs160_prog3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808374234630-qnqmgf4gsa29tajvu2j1vnop2ml9j0t5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dahoon.cs160_prog3",
+            "certificate_hash": "bd4aa924de45552c9a28bba0203d6b9334ec7ea8"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzmzAy6F_JwwdoIbVWhop4qWGwppnVJ68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808374234630-klpojq0c9iq5j95ptu959o5a2aprfchq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

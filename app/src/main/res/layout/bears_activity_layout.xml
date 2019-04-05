@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".Bears_Page">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BearsActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/bear_toolbar"
@@ -20,34 +18,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="Berkeley's Bears"
+        app:title="Berkeley Bears"
         app:titleTextColor="@color/colorPrimaryDark">
 
         <Button
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RELOAD"
-            android:onClick="reload_location"
+            android:text="UPDATE LOCATION"
+            android:onClick="updateLoc_action"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            tools:layout_editor_absoluteX="168dp"
-            tools:layout_editor_absoluteY="9dp"
             android:layout_gravity="right"
-            tools:ignore="OnClick" />
+            android:id="@+id/update_location"
+            android:focusableInTouchMode="false"/>
 
     </android.support.v7.widget.Toolbar>
 
+
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/bears_view"
+        android:id="@+id/recycler_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bear_toolbar"
-        app:layout_constraintVertical_bias="0.252" />
+        android:layout_alignTop="@+id/bear_toolbar"
+        android:layout_marginTop="0dp"
+        android:paddingTop="70dp">
 
-</android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

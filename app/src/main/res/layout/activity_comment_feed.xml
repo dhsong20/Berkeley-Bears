@@ -31,7 +31,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:transcriptMode="alwaysScroll"
-        app:stackFromEnd="true" />
+        app:stackFromEnd="true"
+        android:layout_marginTop="?attr/actionBarSize"/>
 
     <RelativeLayout
         android:id="@+id/llSend"
